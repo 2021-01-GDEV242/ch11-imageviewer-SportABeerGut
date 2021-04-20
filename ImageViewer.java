@@ -30,6 +30,7 @@ public class ImageViewer
     private ImagePanel imagePanel;
     private JLabel filenameLabel;
     private JLabel statusLabel;
+    
     private JButton smallerButton;
     private JButton largerButton;
     private OFImage currentImage;
@@ -247,6 +248,14 @@ public class ImageViewer
         filterList.add(new LighterFilter("Lighter"));
         filterList.add(new ThresholdFilter("Threshold"));
         filterList.add(new FishEyeFilter("Fish Eye"));
+        filterList.add(new RedScaleFilter("RedScale"));
+        filterList.add(new BlueScaleFilter("BlueScale"));
+        filterList.add(new GreenScaleFilter("GreenScale"));
+        filterList.add(new RedChannelFilter("RedChannel"));
+        filterList.add(new BlueChannelFilter("BlueChannel"));
+        filterList.add(new GreenChannelFilter("GreenChannel"));
+        filterList.add(new WarholFilter("WarholFilter"));
+        filterList.add(new FlippedWarholFilter("FlippedWarholFilter"));
        
         return filterList;
     }

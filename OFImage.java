@@ -54,4 +54,5 @@ public class OFImage extends BufferedImage
         int pixel = getRGB(x, y);
         return new Color(pixel);
     }
+    
 }
